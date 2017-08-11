@@ -39,6 +39,14 @@ class MainTest {
     assertEquals(expected, actual);
   }
 
+  @Test
+  void inATwoByOneBoardOp2IsADraw() {
+    String expected = "isDraw";
+    String board = "Y|X";
+    String actual = isDraw(board);
+    assertEquals(expected, actual);
+  }
+
   private String isDraw(String board) {
     String result = null;
     if (board.equals("XY") || board.equals("YX") || board.equals("X|Y") || board.equals("Y|X")) {
