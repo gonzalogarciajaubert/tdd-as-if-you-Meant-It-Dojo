@@ -80,12 +80,12 @@ class MainTest {
   class Board {
     public static final String X_TOKEN = "X";
     public static final String Y_TOKEN = "Y";
-    public Integer rows;
-    public Integer columns;
-    public String oneOne;
-    public String oneTwo;
-    public String twoOne;
-    public String twoTwo;
+    Integer rows;
+    Integer columns;
+    String oneOne;
+    String oneTwo;
+    String twoOne;
+    String twoTwo;
 
     public Board(Integer rows, Integer columns) {
       this.rows = rows;
@@ -187,8 +187,9 @@ class MainTest {
     public static final String IS_DRAW = "isDraw";
     public static final String X_WINS = "x wins";
     public static final String Y_WINS = "y wins";
-    public GameResolver resolver;
-    public Board board;
+
+    Board board;
+    GameResolver resolver;
 
     public GameEngine(Board board) {
       this.board = board;
